@@ -28,6 +28,7 @@ Predicting dropout, enrollment and graduation in higher education with three tas
 ## Structure
 
 ```
+├── data/student_success.csv     # Dataset used in the project
 ├── notebooks/
 │   ├── 01_eda.ipynb             # EDA and variable sheet
 │   ├── 02_clasificacion.ipynb   # Task 1: classification
@@ -40,8 +41,7 @@ Predicting dropout, enrollment and graduation in higher education with three tas
 
 ## Data
 
-The data is the public UCI dataset **[Predict Students' Dropout and Academic Success](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)** (Realinho et al., CC BY 4.0).
-The course used a version with columns renamed and categories translated into Spanish (`rendimiento_estudiantes.csv`), which was course material and is **not redistributed here**. To rerun the notebooks, place that file in the repo root; with the original UCI file, column names must be mapped first.
+`data/student_success.csv` — Spanish version (renamed columns, translated categories) of the public UCI dataset **[Predict Students' Dropout and Academic Success](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)** (Realinho et al., CC BY 4.0). 4,424 students, `;`-separated.
 
 ## Reproduce
 
