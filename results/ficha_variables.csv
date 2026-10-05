@@ -1,0 +1,38 @@
+variable,tipo,bloque,usar_clasificacion,usar_regresion,usar_no_supervisado,observaciones
+estado_civil,categorica,demografica_personal,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+modo_solicitud,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+orden_solicitud,numerica,acceso_contexto_previo,True,True,True,
+curso,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+asistencia_diurna_vespertina,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+cualificacion_previa,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+nota_cualificacion_previa,numerica,acceso_contexto_previo,True,True,True,
+nacionalidad,categorica,demografica_personal,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+cualificacion_madre,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+cualificacion_padre,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+ocupacion_madre,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+ocupacion_padre,categorica,acceso_contexto_previo,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+nota_admision,numerica,acceso_contexto_previo,True,True,True,
+desplazado,categorica,demografica_personal,True,True,True,
+necesidades_educativas_especiales,categorica,demografica_personal,True,True,False,excluida del no supervisado (alta cardinalidad o poco conveniente para clustering)
+deudor,categorica,socioeconomica_administrativa,True,True,True,
+matricula_al_dia,categorica,socioeconomica_administrativa,True,True,True,
+genero,categorica,demografica_personal,True,True,True,
+becado,categorica,socioeconomica_administrativa,True,True,True,
+edad_al_matricularse,numerica,demografica_personal,True,True,True,
+internacional,categorica,demografica_personal,True,True,True,
+asignaturas_1sem_convalidadas,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+asignaturas_1sem_matriculadas,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+asignaturas_1sem_evaluadas,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+asignaturas_1sem_aprobadas,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+nota_media_1sem,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+asignaturas_1sem_sin_evaluacion,numerica,rendimiento_1sem,True,True,True,"predictor valido, rendimiento previo"
+asignaturas_2sem_convalidadas,numerica,rendimiento_2sem,True,False,False,excluir en regresión por riesgo de leakage; excluida del no supervisado
+asignaturas_2sem_matriculadas,numerica,rendimiento_2sem,True,False,False,excluir en regresión por riesgo de leakage; excluida del no supervisado
+asignaturas_2sem_evaluadas,numerica,rendimiento_2sem,True,False,False,excluir en regresión por riesgo de leakage; excluida del no supervisado
+asignaturas_2sem_aprobadas,numerica,rendimiento_2sem,True,False,False,excluir en regresión por riesgo de leakage; excluida del no supervisado
+nota_media_2sem,numerica,target_regresion,True,False,False,"target de regresión, no usar como predictor"
+asignaturas_2sem_sin_evaluacion,numerica,rendimiento_2sem,True,False,False,excluir en regresión por riesgo de leakage; excluida del no supervisado
+tasa_desempleo,numerica,macroeconomica,True,True,True,
+tasa_inflacion,numerica,macroeconomica,True,True,True,
+pib,numerica,macroeconomica,True,True,True,
+objetivo,categorica,target_clasificacion,False,False,False,"target de clasificación, no usar como predictor"
